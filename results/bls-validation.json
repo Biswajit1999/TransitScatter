@@ -1,0 +1,76 @@
+{
+  "data_kind": "synthetic injection-recovery and depth-zero null simulations",
+  "grid_convergence": [
+    {
+      "trial_count": 80,
+      "grid_spacing_days": 0.08860759493670889,
+      "injected_period_days": 3.2,
+      "recovered_period_days": 3.2151898734177213,
+      "absolute_period_error_days": 0.015189873417721156,
+      "best_power": 248.45647548036564
+    },
+    {
+      "trial_count": 160,
+      "grid_spacing_days": 0.04402515723270439,
+      "injected_period_days": 3.2,
+      "recovered_period_days": 3.20125786163522,
+      "absolute_period_error_days": 0.0012578616352199035,
+      "best_power": 375.9717712421628
+    },
+    {
+      "trial_count": 320,
+      "grid_spacing_days": 0.021943573667711602,
+      "injected_period_days": 3.2,
+      "recovered_period_days": 3.19435736677116,
+      "absolute_period_error_days": 0.005642633228840399,
+      "best_power": 288.5534430859717
+    },
+    {
+      "trial_count": 640,
+      "grid_spacing_days": 0.010954616588419341,
+      "injected_period_days": 3.2,
+      "recovered_period_days": 3.2018779342723005,
+      "absolute_period_error_days": 0.001877934272300319,
+      "best_power": 358.0937277280894
+    }
+  ],
+  "empirical_null": {
+    "replicates": 120,
+    "period_trials": 120,
+    "seed": 20261013,
+    "injected_period_days": 3.2,
+    "recovered_period_days": 3.176470588235294,
+    "injected_max_power": 33.358453746723185,
+    "null_median_max_power": 16.339946484701592,
+    "null_p95_max_power": 20.704959553941627,
+    "exceedances": 0,
+    "empirical_p_upper": 0.008264462809917356
+  },
+  "trials_factor": [
+    {
+      "period_trials": 40,
+      "replicates": 50,
+      "median_null_max_power": 13.668120674093625,
+      "p95_null_max_power": 17.42414940349418
+    },
+    {
+      "period_trials": 80,
+      "replicates": 50,
+      "median_null_max_power": 15.256113027805032,
+      "p95_null_max_power": 20.166311344921592
+    },
+    {
+      "period_trials": 160,
+      "replicates": 50,
+      "median_null_max_power": 17.09387447272623,
+      "p95_null_max_power": 21.794347692659496
+    },
+    {
+      "period_trials": 320,
+      "replicates": 50,
+      "median_null_max_power": 17.901527721720914,
+      "p95_null_max_power": 22.417191999538087
+    }
+  ],
+  "limitations": "The null follows this repository's white-plus-smoothed-red-noise generator and fixed BLS implementation. It is not a survey false-alarm probability and omits real gaps, systematics, stellar populations, and search tuning."
+}
