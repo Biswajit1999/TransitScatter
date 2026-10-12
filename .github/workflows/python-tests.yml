@@ -18,4 +18,4 @@ jobs:
       # The legacy package predates repository-wide Ruff adoption. Keep this
       # new gate scoped to the validation module and its focused tests.
       - run: ruff check transitscatter/validation.py tests/test_validation.py
-      - run: pytest -q
+      - run: python -m pytest -q
