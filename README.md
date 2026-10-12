@@ -123,6 +123,11 @@ enough for occasional coincidental alignment.
   since some of the apparent "collapse" is standard look-elsewhere-effect
   behavior in a 350-trial period grid.
 
+The period-grid and empirical-null portion of this roadmap is now implemented
+in `python scripts/run_validation.py`; see
+[`docs/BLS_VALIDATION.md`](docs/BLS_VALIDATION.md). Its probability remains a
+simulation-conditional diagnostic, not a survey false-alarm rate.
+
 ## Repository layout
 
 ```

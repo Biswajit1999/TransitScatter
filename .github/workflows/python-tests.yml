@@ -1,0 +1,21 @@
+name: Python tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt pytest ruff
+      # The legacy package predates repository-wide Ruff adoption. Keep this
+      # new gate scoped to the validation module and its focused tests.
+      - run: ruff check transitscatter/validation.py tests/test_validation.py
+      - run: python -m pytest -q
